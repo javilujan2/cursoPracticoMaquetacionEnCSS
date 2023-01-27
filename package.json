@@ -1,0 +1,26 @@
+{
+  "name": "cursopracticomaquetacionencss",
+  "version": "1.0.0",
+  "description": "Curso de Platzi de maquetacion en CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javilujan2/cursoPracticoMaquetacionEnCSS.git"
+  },
+  "keywords": [
+    "platzi",
+    "css",
+    "html",
+    "maquetacion",
+    "grid"
+  ],
+  "author": "Javier Lujan / @BaldyDev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/javilujan2/cursoPracticoMaquetacionEnCSS/issues"
+  },
+  "homepage": "https://github.com/javilujan2/cursoPracticoMaquetacionEnCSS#readme"
+}
