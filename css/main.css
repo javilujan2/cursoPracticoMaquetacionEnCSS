@@ -16,6 +16,11 @@ body {
     right: 0;
 }
 
+.grid-container {
+    max-width: 1150px;
+    margin: auto;
+}
+
 
 a {
     text-decoration: none;
@@ -159,16 +164,28 @@ header .nav-logo-container {
 }
 
 .blogs-news-info-container p {
+    font-size: 1.6rem;
     margin-bottom: 35px;
 }
 
 .blogs-post-container {
+    
     padding: 0 50px 40px;
+}
+
+.blog-post-container .article-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
     align-items: center;
+    align-self: center;
 }
 
 .blogs-post-container h3 {
     border-bottom: 1px solid #cdd2da;
+    font-size: large;
+    font-weight: 700px;
     padding-bottom: 20px;
     text-align: center;
 }
@@ -185,13 +202,18 @@ header .nav-logo-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin: 0 10px;
     padding: 10px;
+    background-color: #e6e9ed;
     max-width: 29%;
     margin-bottom: 50px;
     border: 2px solid #4fd6c3;
     border-radius: 30px;
     object-fit: cover;
+    box-shadow: -3px 4px 4px 1px rgba(79,214,195,0.63);
+    -webkit-box-shadow: -3px 4px 4px 1px rgba(79,214,195,0.63);
+    -moz-box-shadow: -3px 4px 4px 1px rgba(79,214,195,0.63);;
 }
 
 .blogs-post-container .post-container p {
@@ -211,6 +233,12 @@ footer {
     height: 80px;
     background-color: #cdd2da;
     border-top: 35px solid #47cfac;
+    text-align: center;
+}
+
+footer p {
+    font-size: small;
+    margin-top: 30px;
 }
 
 
