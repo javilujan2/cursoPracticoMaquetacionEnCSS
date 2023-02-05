@@ -185,10 +185,10 @@ header .nav-logo-container {
     padding: 0 50px 40px;
 }
 
-.blog-post-container .article-container {
+.blogs-post-container .article-container {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(auto-fill, 300px);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 3500px));
     justify-content: center;
     align-items: center;
     align-self: center;
@@ -204,28 +204,32 @@ header .nav-logo-container {
 
 .blogs-button {
     border: 1px solid #47cfac;
+    border-radius: 20px;
+    margin: 0 30px;
     padding: 10px 15px;
     font-size: 1.2rem;
     align-items: center;
 }
 
 .blogs-post-container .post-container {
-    display: inline-flex;
-    flex-direction: column;
+    display: grid;
+    grid-column: 1 / 2;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin: 0 10px;
     padding: 10px;
     background-color: #e6e9ed;
-    max-width: 29%;
     margin-bottom: 50px;
-    border: 2px solid #4fd6c3;
-    border-radius: 30px;
-    object-fit: cover;
+    border: 1px solid #4fd6c3;
+    border-radius: 10%;
     box-shadow: -3px 4px 4px 1px rgba(79,214,195,0.63);
     -webkit-box-shadow: -3px 4px 4px 1px rgba(79,214,195,0.63);
     -moz-box-shadow: -3px 4px 4px 1px rgba(79,214,195,0.63);;
+}
+
+.blog-post-container .article-container .post-container h4 {
+    font-size: 3rem;
 }
 
 .blogs-post-container .post-container p {
@@ -235,22 +239,26 @@ header .nav-logo-container {
 }
 
 .blogs-post-container .post-container img {
-    width: 80%;
-    height: 100%;
-    object-fit: cover;
+    display: inline-block;
+    width: 95%;
+    margin: 10px auto;
+    border-radius: 10%;
 }
 
 footer {
     width: 100%;
-    height: 80px;
+    height: auto;
     background-color: #cdd2da;
     border-top: 35px solid #47cfac;
     text-align: center;
+    
 }
 
 footer p {
-    font-size: small;
-    margin-top: 30px;
+    display: inline-block;
+    font-size: 0.8rem;
+    margin: 20px auto;
+
 }
 
 
