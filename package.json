@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/javilujan2/cursoPracticoMaquetacionEnCSS/issues"
   },
-  "homepage": "https://github.com/javilujan2/cursoPracticoMaquetacionEnCSS#readme"
+  "homepage": "https://github.com/javilujan2/cursoPracticoMaquetacionEnCSS#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
 }
