@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
 
-
 body {
     font-family: 'Roboto mono' monospace;
     font-size: 62.5%;
@@ -30,8 +29,7 @@ a {
 
 
 header {
-    width: 100%;
-    
+    width: 100vw;
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 4fr 1fr;
@@ -82,7 +80,7 @@ header .nav-logo-container {
 }
 
 .profile-link a {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: bold;
     color: black;
     text-decoration: underline;
@@ -222,9 +220,7 @@ header .nav-logo-container {
     margin-bottom: 50px;
     border: 1px solid #4fd6c3;
     border-radius: 10%;
-    box-shadow: -3px 4px 4px 1px rgba(79,214,195,0.63);
-    -webkit-box-shadow: -3px 4px 4px 1px rgba(79,214,195,0.63);
-    -moz-box-shadow: -3px 4px 4px 1px rgba(79,214,195,0.63);;
+    box-shadow: -8px 20px 36px -17px rgba(0,0,0,0.75);
 }
 
 .tittle-container {
@@ -247,7 +243,7 @@ header .nav-logo-container {
 }
 
 footer {
-    width: 100%;
+    width: 100vw;
     height: auto;
     background-color: #cdd2da;
     border-top: 35px solid #47cfac;
@@ -262,6 +258,98 @@ footer p {
 
 }
 
+/*Estilos para blog.html*/
+
+.blogpost-img-container {
+    padding: 10px 10px 0 10px
+}
+
+.blogpost-img-container img {
+    width: 100vw;
+    border-radius: 20px;
+    box-shadow: -8px 20px 36px -17px rgba(0,0,0,0.75);
+}
+
+.bolgpost-main-container {
+    padding: 0 10px 20px;
+    max-width: 1150px;
+}
+
+.blogpost-main-container h3 {
+    font-size: 1.3rem;
+    text-align: center;
+    border-bottom: 1px solid #cdd2da;
+    padding: 0 0 20px 10px;
+}
+
+.blogpost-main-container article h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.blogpost-main-container p {
+    font-size: 1rem;
+    padding: 0 10px;
+    text-align: justify;
+}
+
+
+
+.contact-main-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f2f0;
+}
+
+.contact-second-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding-bottom: 20px;
+}
+
+.contact-second-container img {
+    width: 100px;
+    grid-column: 1;
+    align-self: center;
+    justify-self: end;
+    margin-right: 5px;
+}
+
+.contact-second-container .contact-left  {
+    padding-left: 20px;
+    align-items: flex-start;
+}
+
+.contact-second-container .contact-right {
+    padding-left: 20px;
+}
+
+.contact-second-container .contact-right a {
+    text-decoration: underline;
+    font-size: 1.4rem;
+}
+
+.contact-second-container .contact-left a {
+    text-decoration: underline;
+    font-size: 1.4rem;
+}
+
+.contact-second-container .contact-right p{
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.contact-second-container .contact-left p{
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
 
 
 
@@ -272,6 +360,12 @@ footer p {
         justify-content: center;
         align-items: center;
         align-self: center;
+    }
+
+    .contact-main-container {
+        display: flex;
+        flex-direction: row;
+        padding: 30px;
     }
 }
 
