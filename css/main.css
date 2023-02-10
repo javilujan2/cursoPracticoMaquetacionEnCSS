@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
 
 body {
-    font-family: 'Roboto mono' monospace;
-    font-size: 62.5%;
-    /*Para que el posicion fixed funcione correctamente, le asignamos 0 a top bottom left y right*/
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .home-body {
@@ -261,11 +261,14 @@ footer p {
 /*Estilos para blog.html*/
 
 .blogpost-img-container {
-    padding: 10px 10px 0 10px
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 0 10px;
 }
 
 .blogpost-img-container img {
-    width: 100vw;
+    width: 100%;
     border-radius: 20px;
     box-shadow: -8px 20px 36px -17px rgba(0,0,0,0.75);
 }
@@ -350,6 +353,49 @@ footer p {
     font-size: 1rem;
 }
 
+/*Maquetado de perfil.html*/
+
+.profile-main-container {
+    padding: 70px 40px;
+    background-color: #e6e9ed;
+    margin-bottom: 50px;
+}
+
+.profile-main-container img {
+    width: 100%;
+    margin-right: 30px;
+}
+
+.profile-main-container .profile-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-container .profile-main-container-text {
+    padding-left: 20px;
+    font-size: 1rem;
+}
+
+.profile-main-proyects {
+    padding: 0 50px 40px;
+}
+
+.profile-main-proyects h3 {
+    border-bottom: 1px solid #cdd2da;
+    padding-bottom: 35px;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.proyects-main-container {
+    display: grid;
+    
+}
+
+.proyect-container {
+    font-size: 1rem;
+}
+
 
 
 
@@ -366,6 +412,16 @@ footer p {
         display: flex;
         flex-direction: row;
         padding: 30px;
+    }
+
+    .profile-main-container .profile-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .proyects-main-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
